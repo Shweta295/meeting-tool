@@ -1,0 +1,6 @@
+Meeting: Team Sync - October 4, 2025
+Alice: We need to finalize the Q4 budget by Friday.
+Bob: I agree, but marketing spend is over by 10%.
+Alice: Let's cut events budget. Action: Bob to review and send revised numbers by EOD tomorrow.
+Charlie: UX updates are ready for testing next week.
+Alice: Great, assign tester. Meeting end.
