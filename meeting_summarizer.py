@@ -8,9 +8,10 @@ genai.configure(api_key=API_KEY)
 
 def generate_summary(transcript):
     """Generate a meeting summary using Gemini API."""
-    model = genai.GenerativeModel('gemini-1.5-flash')
-    
-    prompt = f"""Generate a concise summary of the following meeting transcript. Keep it between 100-150 words. Focus on key discussions, decisions, and next steps. Structure it with:
+    try:
+        model = genai.GenerativeModel('gemini-flash-latest')
+        
+        prompt = f"""Generate a concise summary of the following meeting transcript. Keep it between 100-150 words. Focus on key discussions, decisions, and next steps. Structure it with:
 - Meeting overview (1-2 sentences)
 - Main points discussed
 - Key decisions/outcomes
@@ -18,25 +19,30 @@ def generate_summary(transcript):
 
 Transcript:
 {transcript}"""
-    
-    response = model.generate_content(prompt)
-    return response.text.strip()
+        
+        response = model.generate_content(prompt)
+        return response.text.strip()
+    except Exception as e:
+        return f"Error generating summary: {str(e)}"
 
 
 def generate_email(transcript_text, summary_text):
     """Generate a follow-up email using Gemini API."""
-    model = genai.GenerativeModel('gemini-1.5-flash')
-    
-    prompt = f"""
-    Write a professional follow-up email based on this meeting summary:
-    
-    {summary_text}
-    
-    The email should be concise, include action items, and have a professional tone.
-    """
-    
-    response = model.generate_content(prompt)
-    return response.text
+    try:
+        model = genai.GenerativeModel('gemini-flash-latest')
+        
+        prompt = f"""
+        Write a professional follow-up email based on this meeting summary:
+        
+        {summary_text}
+        
+        The email should be concise, include action items, and have a professional tone.
+        """
+        
+        response = model.generate_content(prompt)
+        return response.text
+    except Exception as e:
+        return f"Error generating email: {str(e)}"
 
 
 def main():

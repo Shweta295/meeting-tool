@@ -1,0 +1,13 @@
+**Meeting Summary: Team Sync - October 4, 2025**
+
+**Meeting Overview**
+This synchronization meeting focused on addressing an urgent financial deadline for the Q4 budget and confirming the schedule for imminent product updates.
+
+**Main Points Discussed**
+The primary discussion revolved around finalizing the Q4 budget, which must be completed by Friday. This process is complicated by an identified 10% overrun in marketing expenditure. Additionally, the team confirmed that all required UX updates have been completed and are ready to enter the testing phase starting next week.
+
+**Key Decisions/Outcomes**
+To compensate for the marketing overrun, the team decided to reduce the budget allocated for events. Bob was assigned the action item to review and submit the revised financial numbers by the end of the day tomorrow. The second key decision was to move immediately into testing the new UX updates.
+
+**Open Questions**
+The specific individual responsible for serving as the primary tester for the new UX updates still needs to be assigned before the end of the current week.
