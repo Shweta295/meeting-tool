@@ -16,7 +16,7 @@ A simple web-based tool to summarize meeting transcripts and generate follow-up 
 
 3. **Add your API key:**
    - Open `meeting_summarizer.py`
-   - Replace `AIzaSyBdeCZuVDAbaTailEnjD54XSIIXmAoXbBA` with your actual API key
+   - Replace `absjdhfhhfoisjfoiejijojo` with your actual API key
 
 ## How to Run
 
