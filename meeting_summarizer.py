@@ -48,7 +48,7 @@ def generate_email(transcript_text, summary_text):
 def main():
     """Main Streamlit application."""
     st.title("AI Meeting Summarizer + Email Generator")
-    st.write("=== Demo Flow: Transcript → Summary → Email ===")
+    st.write("Transcript → Summary → Email ===")
     st.write("")
     
     # File upload section
